@@ -49,7 +49,7 @@ module ActiveAdmin
     end
 
     def controller_name
-      [namespace.module_name, resource_name + "Controller"].compact.join('::')
+      [namespace.module_name, resource_name.gsub(/\s/,'') + "Controller"].compact.join('::')
     end
 
     def belongs_to?

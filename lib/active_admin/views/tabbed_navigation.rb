@@ -16,6 +16,7 @@ module ActiveAdmin
       # @param [ActiveAdmin::Menu] menu the Menu to render
       # @param [Hash] options the options as passed to the underlying ul element.
       #
+
       def build(menu, options = {})
         @menu = menu
         super(default_options.merge(options))

@@ -85,7 +85,7 @@ module ActiveAdmin
     # eg: 
     #   Namespace.new(:admin).module_name # => 'Admin'
     #   Namespace.new(:root).module_name # => nil
-    #
+    
     def module_name
       return nil if root?
       @module_name ||= name.to_s.camelize
